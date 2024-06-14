@@ -1,5 +1,6 @@
 import { Helmet } from '@modern-js/runtime/head';
 import './index.css';
+import { foo, Test } from '@abcdefg/dep';
 
 const Index = () => (
   <div className="container-box">
@@ -10,6 +11,14 @@ const Index = () => (
         href="https://lf3-static.bytednsdoc.com/obj/eden-cn/uhbfnupenuhf/favicon.ico"
       />
     </Helmet>
+    <Test />
+    <button
+      onClick={() => {
+        foo();
+      }}
+    >
+      FOO
+    </button>
     <main>
       <div className="title">
         Welcome to

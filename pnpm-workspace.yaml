@@ -1,0 +1,3 @@
+packages:
+  - examples/dep
+  - examples/basic-app

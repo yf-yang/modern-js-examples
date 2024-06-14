@@ -1,3 +1,4 @@
 examples/**/yarn.lock
 examples/**/pnpm-lock.yaml
 examples/**/package-lock.json
+node_modules

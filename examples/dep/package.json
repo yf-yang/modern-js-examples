@@ -1,11 +1,10 @@
 {
-  "name": "dep",
+  "name": "@abcdefg/dep",
   "version": "0.1.0",
   "types": "./dist/types/index.d.ts",
   "main": "./dist/lib/index.js",
   "module": "./dist/es/index.js",
   "scripts": {
-    "prepare": "modern build && husky install",
     "dev": "modern dev",
     "build": "modern build",
     "build:watch": "modern build -w",
@@ -29,17 +28,19 @@
     "node_modules/",
     "dist/"
   ],
-  "dependencies": {},
-  "peerDependencies": {},
+  "dependencies": {
+    "react": "^18.3.1"
+  },
   "devDependencies": {
-    "@modern-js/module-tools": "2.53.0",
     "@modern-js/eslint-config": "2.53.0",
-    "typescript": "~5.0.4",
+    "@modern-js/module-tools": "2.53.0",
     "@types/node": "~16.11.7",
-    "rimraf": "~3.0.2",
+    "@types/react": "^18.3.3",
+    "husky": "~8.0.1",
     "lint-staged": "~13.1.0",
     "prettier": "~2.8.1",
-    "husky": "~8.0.1"
+    "rimraf": "~3.0.2",
+    "typescript": "^5.4.5"
   },
   "sideEffects": [],
   "publishConfig": {
